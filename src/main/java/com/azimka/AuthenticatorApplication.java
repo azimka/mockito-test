@@ -9,6 +9,11 @@ public class AuthenticatorApplication {
     }
 
     public boolean authenticate(String name, String password) {
+
+        if (!authenticatorInterface.validateCredentials(name, password)) {
+            throw new RuntimeException("credentials not valid");
+        }
+
         return this.authenticatorInterface.authenticateUser(name, password);
     }
 }
