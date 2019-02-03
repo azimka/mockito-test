@@ -1,4 +1,4 @@
-package com.azimka.chapter2;
+package com.azimka.chapter1_1;
 
 import com.azimka.exceptions.NotAuthenticateException;
 import org.junit.Before;
