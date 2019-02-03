@@ -1,4 +1,6 @@
-package com.azimka;
+package com.azimka.chapter1;
+
+import com.azimka.exceptions.EmptyCredentialsException;
 
 public class AuthenticatorApplication {
 
@@ -8,7 +10,7 @@ public class AuthenticatorApplication {
         this.authenticatorInterface = authenticatorInterface;
     }
 
-    public boolean authenticate(String name, String password) {
+    public boolean authenticate(String name, String password) throws EmptyCredentialsException {
 
         if (!authenticatorInterface.validateCredentials(name, password)) {
             throw new RuntimeException("credentials not valid");
