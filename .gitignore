@@ -21,3 +21,24 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+out
+target
+lib
+/appconfig/util.properties
+**.iml
+
+# Eclipse
+**.settings
+**.project
+**.classpath
+
+# HQL (IDE) configuration
+hibernate.*.properties
+hibernate.*.cfg.xml
+/nbactions-release-profile.xml
+/nbactions.xml
+
+maven.log
